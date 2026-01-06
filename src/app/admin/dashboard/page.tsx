@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Plus, LogOut, LayoutDashboard, MessageSquare, Package, Trash2, Edit, X, Save, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -118,10 +118,15 @@ export default function AdminDashboard() {
   };
 
   // Check if user is admin
+useEffect(() => {
   if (!currentUser || currentUser.role !== 'admin') {
     router.push('/login');
-    return null;
   }
+}, [currentUser, router]);
+
+if (!currentUser || currentUser.role !== 'admin') {
+  return null;
+}
 
   return (
     <div className="min-h-screen flex flex-col">
