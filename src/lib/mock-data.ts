@@ -1,0 +1,105 @@
+import { Product, ContactMessage } from '@/types';
+
+export const mockProducts: Product[] = [
+  {
+    id: '1',
+    name: 'Premium Cotton T-Shirt',
+    description: 'Crafted from 100% organic cotton, this premium t-shirt offers exceptional comfort and durability. Perfect for everyday wear with a modern fit.',
+    price: 89.99,
+    category: 'Clothing',
+    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '2',
+    name: 'Classic Denim Jacket',
+    description: 'A timeless denim jacket with a contemporary twist. Features premium quality fabric and thoughtful detailing for a stylish look.',
+    price: 249.99,
+    category: 'Clothing',
+    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '3',
+    name: 'Minimalist Leather Bag',
+    description: 'Elegant leather bag crafted from Italian leather. Spacious interior with multiple compartments for organization.',
+    price: 349.99,
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '4',
+    name: 'Premium Sneakers',
+    description: 'Comfortable and stylish sneakers made with premium materials. Perfect for both casual and active wear.',
+    price: 199.99,
+    category: 'Footwear',
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '5',
+    name: 'Elegant Silk Scarf',
+    description: 'Luxurious silk scarf featuring a beautiful pattern. A perfect accessory to elevate any outfit.',
+    price: 129.99,
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '6',
+    name: 'Casual Summer Dress',
+    description: 'Light and breezy summer dress with a flattering silhouette. Made from breathable fabric for maximum comfort.',
+    price: 179.99,
+    category: 'Clothing',
+    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '7',
+    name: 'Designer Watch',
+    description: 'Sophisticated timepiece with Swiss precision movement. Features a clean dial and premium leather strap.',
+    price: 599.99,
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+  {
+    id: '8',
+    name: 'Wool Blend Coat',
+    description: 'Warm and stylish wool blend coat perfect for colder seasons. Classic design with modern tailoring.',
+    price: 449.99,
+    category: 'Clothing',
+    image: 'https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=800&h=800&fit=crop',
+    inStock: true,
+  },
+];
+
+export const mockMessages: ContactMessage[] = [
+  {
+    id: '1',
+    name: 'John Smith',
+    email: 'john@example.com',
+    subject: 'Product Inquiry',
+    message: 'I am interested in the Premium Cotton T-Shirt. Is it available in size XL?',
+    date: '2024-01-15',
+  },
+  {
+    id: '2',
+    name: 'Sarah Johnson',
+    email: 'sarah@example.com',
+    subject: 'Shipping Information',
+    message: 'Could you please provide information about international shipping to Canada?',
+    date: '2024-01-14',
+  },
+  {
+    id: '3',
+    name: 'Mike Davis',
+    email: 'mike@example.com',
+    subject: 'Wholesale Inquiry',
+    message: 'I would like to inquire about wholesale pricing for bulk orders.',
+    date: '2024-01-13',
+  },
+];
+
+export const categories = ['All', 'Clothing', 'Accessories', 'Footwear'];
